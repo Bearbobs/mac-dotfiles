@@ -256,6 +256,9 @@ setup_tmux_vim() {
 
   # install terminfo
   tic ./terminfo/xterm-256color-italic.terminfo
+  
+  # To install useful key bindings and fuzzy completion:
+  $(brew --prefix)/opt/fzf/install
 
   finish
 }
