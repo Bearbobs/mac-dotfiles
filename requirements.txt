@@ -1,0 +1,24 @@
+# for editor
+neovim
+pynvim>=0.4.3
+greenlet
+jedi
+
+# basic library
+pandas
+numpy
+scipy
+matplotlib
+soundfile
+librosa
+sklearn
+
+# for debug
+ipython
+pdbpp
+pytest
+
+# for linter
+hacking
+flake8-docstrings
+black

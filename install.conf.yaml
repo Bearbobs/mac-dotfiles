@@ -1,0 +1,30 @@
+- defaults:
+    shell:
+      stdout: true
+      stderr: true
+
+- clean: ['~']
+
+- link:
+    ~/:
+      glob: true
+      path: home/.*
+      create: true
+      relink: true
+      force: true
+
+- create:
+    - ~/.config
+
+- shell:
+    - description: Installing submodules
+      command: git submodule update --init --recursive
+
+    - description: Scaffolding Project folders
+      command: ./scripts/projects
+
+    - description: Installing sheldon
+      command: ./scripts/sheldon
+
+    - description: Run ./scripts/bootstrap to bootstrap new machine
+      command: echo "./scripts/bootstrap"

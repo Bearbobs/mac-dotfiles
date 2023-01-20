@@ -1,0 +1,10 @@
+# Backup folder
+backup
+
+# Custom files (*sh includes sh, bash, zsh)
+custom/**/*.*sh
+
+# Home Configs
+home/.config/*
+!home/.config/sheldon
+!home/.config/gh/config.yml
